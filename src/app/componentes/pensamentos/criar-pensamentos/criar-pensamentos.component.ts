@@ -1,5 +1,6 @@
 import { RouterLink, RouterModule } from '@angular/router';
 import { Component } from '@angular/core';
+import { Pensamentos } from '../pensamento';
 
 @Component({
   selector: 'app-criar-pensamentos',
@@ -8,8 +9,8 @@ import { Component } from '@angular/core';
 })
 export class CriarPensamentosComponent {
 
-  pensamento = {
-    id: '1',
+  pensamento: Pensamentos = {
+    id: 0,
     conteudo: 'aqui é o conteudo',
     autoria: 'andrew',
     modelo: 'teste'
